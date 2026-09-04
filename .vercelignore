@@ -1,0 +1,9 @@
+.github
+tests
+alembic
+alembic.ini
+docker-compose.yml
+requirements-dev.txt
+.venv
+.pytest_cache
+.ruff_cache
