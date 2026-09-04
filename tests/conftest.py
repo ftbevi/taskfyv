@@ -16,5 +16,5 @@ async def banco_limpo():
 @pytest.fixture
 async def cliente():
     transporte = ASGITransport(app=app)
-    async with AsyncClient(transport=transporte, base_url="http://test") as c:
-        yield c
+    async with AsyncClient(transport=transporte, base_url="http://test") as client:
+        yield client
