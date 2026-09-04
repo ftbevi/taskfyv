@@ -58,7 +58,7 @@ jobs:
         run: pytest -q
 
   preview:
-    # needs: testes
+    needs: testes
     if: github.event_name == 'pull_request' && github.ref == 'refs/heads/develop'
     runs-on: ubuntu-latest
 
